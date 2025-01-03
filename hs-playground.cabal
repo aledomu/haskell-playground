@@ -25,6 +25,7 @@ executable hs-playground
     build-depends:      base >= 4.20 && < 4.21
                       , containers >= 0.7 && < 0.8
                       , text >= 2.1.1 && < 2.2
+                      , bytestring >= 0.12.1 && < 0.13
                       , flow >= 2.0.0 && < 2.1
                       , linear-base >= 0.4.0 && < 0.5
                       , comonad >= 5.0.9 && < 5.1
