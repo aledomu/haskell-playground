@@ -32,7 +32,6 @@ executable hs-playground
                       , profunctors >= 5.6.2 && < 5.7
                       , optics >= 0.4.2 && < 0.5
                       , effectful >= 2.5.1 && < 2.6
-                      , ki-effectful >= 0.1.1 && < 0.2
     mixins:             base hiding (Prelude)
                       , linear-base (Prelude.Linear as Prelude)
     hs-source-dirs:     app
