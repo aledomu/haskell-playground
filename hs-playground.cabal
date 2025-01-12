@@ -32,6 +32,7 @@ executable hs-playground
                       , comonad >= 5.0.9 && < 5.1
                       , profunctors >= 5.6.2 && < 5.7
                       , optics >= 0.4.2 && < 0.5
+                      , named >= 0.3.0 && < 0.4
                       , effectful >= 2.5.1 && < 2.6
                       , parsec >= 3.1.17 && < 3.2
                       , req >= 3.13.4 && < 3.14
