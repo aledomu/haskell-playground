@@ -1,5 +1,5 @@
 cabal-version:      3.0
-name:               hs-playground
+name:               haskell-playground
 version:            0.1.0.0
 synopsis:           Playground with unusual settings and experimental features
 -- description:
@@ -15,7 +15,7 @@ build-type:         Simple
 common warnings
     ghc-options: -Wall
 
-executable hs-playground
+executable haskell-playground
     import:             warnings
     main-is:            Main.hs
     -- other-modules:
