@@ -24,6 +24,7 @@ executable haskell-playground
     -- linear-base contains base, containers and text
     build-depends:      base >= 4.20 && < 4.21
                       , containers >= 0.7 && < 0.8
+                      , QuickCheck >= 2.15.0 && < 2.16
                       , fgl >= 5.8.3 && < 5.9
                       , text >= 2.1.1 && < 2.2
                       , bytestring >= 0.12.1 && < 0.13
