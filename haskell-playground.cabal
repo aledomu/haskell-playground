@@ -21,38 +21,23 @@ executable haskell-playground
     other-extensions:   ImpredicativeTypes
                       , QuasiQuotes
     -- linear-base contains base, containers and text
-    build-depends:      base >= 4.20 && < 4.21
-                      , containers >= 0.7 && < 0.8
-                      , QuickCheck >= 2.15.0 && < 2.16
-                      , fgl >= 5.8.3 && < 5.9
-                      , text >= 2.1.1 && < 2.2
-                      , bytestring >= 0.12.1 && < 0.13
-                      , flow >= 2.0.0 && < 2.1
-                      , linear-base >= 0.4.0 && < 0.5
-                      , comonad >= 5.0.9 && < 5.1
-                      , profunctors >= 5.6.2 && < 5.7
-                      , optics >= 0.4.2 && < 0.5
+    build-depends:      base >= 4.21 && < 4.22
                       , named >= 0.3.0 && < 0.4
-                      , effectful >= 2.5.1 && < 2.6
-                      , parsec >= 3.1.17 && < 3.2
-                      , req >= 3.13.4 && < 3.14
-                      , beam-core >= 0.10.3 && < 0.11
-                      , beam-sqlite >= 0.5.3 && < 0.6
-                      , servant >= 0.20.2 && < 0.21
-                      , htmx-servant >= 0.2.0 && < 0.3
-                      , servant-client >= 0.20.2 && < 0.21
-                      , aeson >= 2.2.3 && < 2.3
-                      , lucid2 >= 0.0.20240424 && < 0.1
-                      , htmx-lucid >= 0.2.0 && < 0.3
-    mixins:             base hiding (Prelude)
-                      , linear-base (Prelude.Linear as Prelude)
+                      , profunctors >= 5.6.2 && < 5.7
+                      , comonad >= 5.0.9 && < 5.1
+                      , lens >= 5.3.4 && < 5.4
+-- profunctors, comonad and lens required containers-0.7
+                      , containers >= 0.7 && < 0.8
+                      , fgl >= 5.8.3 && < 5.9
+                      , text >= 2.1.2 && < 2.2
+                      , bytestring >= 0.12.2 && < 0.13
+                      , parsec >= 3.1.18 && < 3.2
+                      , QuickCheck >= 2.15.0 && < 2.16
+                      , heftia >= 0.7.0 && < 0.8
     hs-source-dirs:     app
     default-language:   GHC2024
--- OrPatterns and MultilineStrings, while interesting, require GHC >= 9.12
     default-extensions: ApplicativeDo
                       , Arrows
-                      , OverloadedStrings
-                      , OverloadedLists
                       , ParallelListComp
                       , TransformListComp
                       , MonadComprehensions
@@ -61,8 +46,12 @@ executable haskell-playground
                       , RecordWildCards
                       , BlockArguments
                       , PatternSynonyms
+                      , OrPatterns
                       , LexicalNegation
                       , MultiWayIf
+                      , OverloadedStrings
+                      , OverloadedLists
+                      , MultilineStrings
                       , NumDecimals
                       , PackageImports
                       , UnboxedTuples
